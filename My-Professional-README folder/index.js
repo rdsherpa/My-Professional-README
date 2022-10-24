@@ -11,6 +11,7 @@ function init() {
   const generateREADME = ({
     title,
     overview,
+    description,
     functionality,
     code,
     comments,
@@ -19,26 +20,40 @@ function init() {
     viewing,
     usage,
     license,
-    contributing,
     questions,
   }) =>
-    `# PROJECT TITLE: ${title}
-    
+    `# PROJECT TITLE: 
+    ${title}
+    My-Weather-Application
 
     # Overview ${overview}
-    
+    The repository shows a weather application that displays 5 days weather forecast of any city the user types.
+
+    ## Description
+    ${description}
+
+  Main motivation behind was to challange my self with Java Script. I feel like I need to work more on Java Script as there is lots of logic involve and this challenge would help me understand how Java Script actually works.
+
+  I wanted to build this project so that people can easily access 5 days weather forecast when they search for any city in US. I also wanted to explore more about how Java Script works and the ways it can grab elements from HTML AND CSS.
+
+  People can easily access 5 days weather of any US city and this also helps me to improve my skills.
+
+  I learned more about making a code clean, styling and doing more research for CSS and Java Script. Patient is the key is what I learned from this challenge. Give your best to try solving this problem and if doubts as your tutor and get feedback. Never hesitate to ask for help.
+
+  I also learned how to use third party APIs and how to fetch them in JavaScript. I had a better understanding of JavaScript through this project. Although this project took me 3 weeks to finish, but knowledge that I gained was immense.
+
     ## Table of Contents
     Here is the table of contents to make it easy for user to find what they need.
-    •Functionality
-    •code
-    •comments
-    •Repository
-    •URL
-    •Viewing
-    •Usage
-    •License
-    •Contributing
-    •Questions
+    - [Functionality] (#functionality)
+    - [Code] (#code)
+    - [Comments] (#comments)
+    - [Repository] (#repository)
+    - [URL] (#url)
+    - [Viewing] (#viewing)
+    - [Usage] (#usage)
+    - [License] (#license)
+    - [Contributing] (#contributing)
+    - [Questions] (#questions)
     
     ## Functionality
     ${functionality}
@@ -61,9 +76,22 @@ function init() {
     ${url}
     If you want to test the application you can follow this link: https://rdsherpa.github.io/My-Weather-Application/
 
+    ## Usage
+    ${usage}
+    Below is the screenshot of My-Weather-Application
+    ![alt text](/My-Professional-README%20folder/images/Screen%20Shot%202022-10-22%20at%208.54.27%20AM.png)
+
+    ## License
+    ${license}
+    Anyone willing to learn about how this weather application and taking it as an inspiration is fine. Plagarism is not accepted. You can take my code as a refrence and learn from it copying a pasting and making it as your work is not highly accepted.
+
+
+
     ## Viewing
     ${viewing}
     My Weather Application can be viewed in any screen size. You can also view code for Html, CSS and JavaScript.
+    Video link of READ ME walk through: https://drive.google.com/file/d/14gbXBzoM6rEfLEbzWwvdcXIjw9i3zfA0/view
+    
 
     ## Questions
     ${questions}
@@ -85,6 +113,12 @@ function init() {
         type: "input",
         name: "overview",
         message: "Provide an overview of what the applicaiton does.",
+      },
+      {
+        type: "input",
+        name: "description",
+        message:
+          "Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide.",
       },
       {
         type: "input",
